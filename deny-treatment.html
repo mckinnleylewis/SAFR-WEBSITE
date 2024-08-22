@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DNRP SAFR Department - Deny Medical Treatment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>DNRP SAFR Department</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="firefighter-week.html">FF Of The Week</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="incident-report.html">Incident Report</a>
+            <a href="deny-treatment.html">Deny Medical Treatment</a>
+        </nav>
+    </header>
+
+    <div class="container deny-treatment">
+        <h2>Deny Medical Treatment Form</h2>
+        <div class="form-container">
+        <form id="denyTreatmentForm">
+            <label for="patientName">Patient Name</label>
+            <input type="text" id="patientName" name="patientName" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="reason">Reason for Denial</label>
+            <textarea id="reason" name="reason" rows="4" required></textarea>
+
+            <label for="authorizedSignature">Authorized Signature</label>
+            <input type="text" id="authorizedSignature" name="authorizedSignature" required>
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Submit Form</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DNRP SAFR. All rights reserved.</p>
+        <p>&copy; 2024 DDOS / Raid Rrotection</p>
+    </footer>
+
+    <script src="denytreatment.js"></script>
+</body>
+</html>

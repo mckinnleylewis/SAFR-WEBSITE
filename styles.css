@@ -1,0 +1,195 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://forum.cfx.re/uploads/default/original/4X/e/e/6/ee6e52e091ebb88d63dcdec7f9cbd140ee3ba4c2.jpeg');
+    background-size: cover;
+    color: #ffffff;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2em 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out 0.5s;
+}
+
+nav a {
+    position: relative;
+    color: #fff;
+    margin: 0 1.5em;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #ff0000;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+nav a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #ff0000;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow around the box */
+    border: 2px solid #ff0000; /* Blue border around the container */
+    max-width: 1200px;
+    margin: auto; /* Center the container */
+    animation: slideInUp 1s ease-in-out;
+}
+
+
+.home-content, .services, .about, .contact, .gallery, .volunteer {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slideInUp 1s ease-in-out;
+}
+
+h2 {
+    border-bottom: 2px solid #ff0000;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    color: #1286f3;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Add this to your styles.css file */
+
+.incident-report {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    animation: slideInUp 1s ease-in-out;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 0.5em 0 0.2em;
+    color: #ffffff;
+}
+
+input, textarea {
+    padding: 0.8em;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+button {
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    background: #ff0000;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+button:hover {
+    background: #ff0000;
+    transform: scale(1.05);
+}
+
+button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover::after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow around the box */
+    max-width: 1200px;
+    margin: auto; /* Center the form box */
+    animation: slideInUp 2s ease-in-out;
+    border: 2px solid #1286f3; /* Blue border around the box */
+}
+
+
